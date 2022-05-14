@@ -10,8 +10,7 @@ const Header = ({title, onAddForm, showAdd}) => {
         <header className="header">
             <h1>{title}</h1>
             {location.pathname === '/' && (
-                    <Button classname='btn' value={showAdd ? 'Close' : 'Add'} onAdd={onAddForm} color={showAdd ? 'red' : 'green'}/>
-
+                <Button classname='btn' value={showAdd ? 'Close' : 'Add'} onAdd={onAddForm} color={showAdd ? 'red' : 'green'}/>
             )}
         </header>
     )
